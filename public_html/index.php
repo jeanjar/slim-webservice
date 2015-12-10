@@ -30,7 +30,8 @@ include implode(DIRECTORY_SEPARATOR,[dirname(__DIR__), 'routes', 'exemple.php'])
  *
  */
 
-$app->get('/', function() {
+$app->get('/', function() use ($db) {
+    var_dump($db->getInstance());
     echo JsonResponse::dump(Slim::getInstance()->request()->get());
 });
 

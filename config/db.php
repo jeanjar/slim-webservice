@@ -1,3 +1,3 @@
 <?php
 
-$app->db = new Database($settings['db']);
+$db = new Database($settings['db']);

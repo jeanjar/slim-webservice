@@ -14,6 +14,11 @@ $app = new Slim([
 ]);
 
 /**
+ * Middleware de autenticação
+ */
+$app->add(new Middleware\Authentication($settings['authenticated_routes']));
+
+/**
  * Configurações
  */
 include implode(DIRECTORY_SEPARATOR,[dirname(__DIR__), 'config', 'db.php']);

@@ -6,8 +6,11 @@ return
             'default' => [
                 'dsn' => 'pgsql:host=HOST;dbname=DB',
                 'user' => 'USER',
-                'pass' => 'PASSWORD',
+                'pass' => 'PASSWORD'
             ],
         ],
-        'environment' => ENV_DEV,
+        'authenticated_routes' => [
+            '/minha/rota/autenticada'
+        ],
+        'environment' => ENV_DEV
     ];

@@ -7,10 +7,13 @@ $settings = [
         'default' => [
             'dsn' => 'pgsql:host=HOST;dbname=DB_NAME',
             'user' => 'DB_USER',
-            'pass' => 'DB_PASS',
+            'pass' => 'DB_PASS'
         ],
     ],
-    'environment' => ENV_DEV,
+    'authenticated_routes' => [
+
+    ],
+    'environment' => ENV_DEV
 ];
 
 return Nette\Utils\Arrays::mergeTree($local_settings, $settings);

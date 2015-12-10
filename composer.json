@@ -1,0 +1,21 @@
+{
+    "name": "jeanjar/slim-base",
+    "description": "Base para criação de WebService baseada na fremework Slim http://www.slimframework.com/",
+    "require": {
+        "php": "^5.5",
+        "slim/slim": "^2.6",
+        "nette/utils": "2.3.6"
+    },
+    "license": "Apache 2.0",
+    "authors": [
+        {
+            "name": "Jean Jar Pereira de Araújo",
+            "email": "jeanjpa@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "" : ["src/" , "lib/"]
+      }
+    }
+}
